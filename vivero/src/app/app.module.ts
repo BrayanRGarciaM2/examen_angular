@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { PlantaModule } from './planta/planta.module';
+import { PlantModule } from './plant/plant.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { PlantaModule } from './planta/planta.module';
   ],
   imports: [
     BrowserModule,
-    PlantaModule,
+    PlantModule,
     HttpClientModule
   ],
   providers: [],

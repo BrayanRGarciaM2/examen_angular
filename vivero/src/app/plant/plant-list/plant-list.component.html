@@ -9,12 +9,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let planta of plantas; let i = index">
+      <tr *ngFor="let plant of plants; let i = index">
         <th scope="row" id="rowNumber">{{ i + 1 }}</th>
-        <th>{{planta.nombre_comun}}</th>
-        <th>{{planta.tipo}}</th>
-        <th>{{planta.clima}}</th>
+        <th>{{plant.nombre_comun}}</th>
+        <th>{{plant.tipo}}</th>
+        <th>{{plant.clima}}</th>
       </tr>
     </tbody>
-  </table>>
+  </table>
+  <app-plant-type [plants]="plants"></app-plant-type>
 </div>
