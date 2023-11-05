@@ -1,0 +1,20 @@
+<div class="col col-md-8 col-lg-10">
+  <table class="table">
+    <thead>
+      <tr class="table-dark">
+        <th scope="col">#</th>
+        <th scope="col">Nombre común</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Clima</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let planta of plantas; let i = index">
+        <th scope="row" id="rowNumber">{{ i + 1 }}</th>
+        <th>{{planta.nombre_comun}}</th>
+        <th>{{planta.tipo}}</th>
+        <th>{{planta.clima}}</th>
+      </tr>
+    </tbody>
+  </table>>
+</div>
